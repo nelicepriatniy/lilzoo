@@ -1,0 +1,7 @@
+.root {
+  min-height: 100vh;
+  background:
+    linear-gradient(180deg, rgba(255, 253, 248, 0.86), rgba(245, 242, 236, 0.96)),
+    radial-gradient(circle at 14% 12%, rgba(46, 124, 105, 0.18), transparent 24rem),
+    radial-gradient(circle at 88% 14%, rgba(197, 139, 76, 0.2), transparent 22rem);
+}

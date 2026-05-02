@@ -1,0 +1,44 @@
+.logo {
+  font-family: var(--font-head);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  letter-spacing: -0.03em;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.logoImg {
+  display: block;
+  width: 156px;
+  height: auto;
+  object-fit: contain;
+}
+
+.landingSize {
+  width: 152px;
+}
+
+.appSize {
+  width: 136px;
+}
+
+.onboardSize {
+  width: 150px;
+}
+
+@media (max-width: 680px) {
+  .landingSize {
+    width: 128px;
+  }
+
+  .appSize {
+    width: 122px;
+  }
+}

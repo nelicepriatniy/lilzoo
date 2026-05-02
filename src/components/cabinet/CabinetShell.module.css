@@ -1,0 +1,35 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: var(--bg);
+}
+
+.body {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  min-height: 0;
+}
+
+.main {
+  flex: 1;
+  overflow-y: auto;
+  min-width: 0;
+}
+
+@media (min-width: 881px) {
+  .root {
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+  }
+
+  .body {
+    display: grid;
+    grid-template-columns: 116px minmax(0, 1fr);
+  }
+
+  .main {
+    height: 100%;
+  }
+}

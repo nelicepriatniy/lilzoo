@@ -1,0 +1,44 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border-radius: 9px;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.primary {
+  background: var(--primary-lighter);
+  color: var(--primary);
+}
+
+.accent {
+  background: #fff0e6;
+  color: var(--accent-dark);
+}
+
+.pro {
+  background: #f3e8ff;
+  color: var(--pro);
+}
+
+.boost {
+  background: #fff7ed;
+  color: #d97706;
+}
+
+.verified {
+  background: var(--primary-lighter);
+  color: var(--primary);
+}
+
+.gray {
+  background: #f3f4f6;
+  color: #6b7280;
+}
+
+.pink {
+  background: #fff0f5;
+  color: #db2777;
+}

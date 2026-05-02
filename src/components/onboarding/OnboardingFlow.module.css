@@ -1,0 +1,236 @@
+.page {
+  min-height: 100vh;
+  background: var(--bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card {
+  background: var(--bg-card);
+  border-radius: var(--radius);
+  max-width: 560px;
+  width: 100%;
+  box-shadow: 0 28px 80px rgba(18, 59, 53, 0.14);
+  overflow: hidden;
+  border: 1px solid rgba(18, 59, 53, 0.08);
+}
+
+.header {
+  background: linear-gradient(135deg, #123b35, #2e7c69);
+  padding: 32px 28px 24px;
+  color: #fff;
+}
+
+.header h2 {
+  font-family: var(--font-head);
+  font-size: 1.5rem;
+  margin-top: 12px;
+}
+
+.header p {
+  opacity: 0.85;
+  font-size: 0.9rem;
+  margin-top: 6px;
+}
+
+.brand {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 800;
+  font-family: var(--font-head);
+  letter-spacing: -0.03em;
+  margin-bottom: 4px;
+}
+
+.brand:hover {
+  text-decoration: underline;
+}
+
+.body {
+  padding: 28px;
+}
+
+.roleGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.roleCard {
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: #fffdf8;
+}
+
+.roleCard:hover {
+  border-color: var(--primary-light);
+  background: var(--primary-lighter);
+}
+
+.roleSelected {
+  border-color: var(--primary);
+  background: var(--primary-lighter);
+}
+
+.roleIcon {
+  font-size: 2.4rem;
+  margin-bottom: 10px;
+}
+
+.roleCard h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.roleCard p {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.stepRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.stepDot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.stepActive {
+  background: var(--primary);
+  color: #fff;
+}
+
+.stepDone {
+  background: var(--primary-light);
+  color: #fff;
+}
+
+.stepInactive {
+  background: var(--border);
+  color: var(--text-muted);
+}
+
+.stepLine {
+  flex: 1;
+  height: 2px;
+  background: var(--border);
+  border-radius: 1px;
+}
+
+.stepLineDone {
+  background: var(--primary-light);
+}
+
+.formGroup {
+  margin-bottom: 16px;
+}
+
+.label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+.input,
+.select,
+.textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--text);
+  background: #fff;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input:focus,
+.select:focus,
+.textarea:focus {
+  border-color: var(--primary-light);
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.full {
+  flex: 1;
+}
+
+.hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 4px 0 20px;
+}
+
+.photoPlaceholder {
+  width: 100%;
+  height: 140px;
+  background: var(--primary-lighter);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  cursor: pointer;
+  border: 2px dashed var(--primary-light);
+  margin-bottom: 16px;
+}
+
+.photoPlaceholder:hover {
+  background: #c8efd5;
+}
+
+.backLink {
+  display: inline-block;
+  margin-bottom: 16px;
+  color: var(--primary);
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.backLink:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 680px) {
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+
+  .roleGrid {
+    grid-template-columns: 1fr;
+  }
+}

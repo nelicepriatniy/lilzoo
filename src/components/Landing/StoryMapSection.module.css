@@ -1,0 +1,308 @@
+.root {
+  overflow: visible;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.inner {
+  display: grid;
+  grid-template-columns: minmax(340px, 0.72fr) minmax(560px, 1.12fr);
+  gap: 34px;
+  padding: 0;
+  min-height: 560px;
+  align-items: center;
+}
+
+.copyCard {
+  align-self: center;
+  justify-self: start;
+  width: 100%;
+  max-width: 410px;
+  margin: 0 0 0 34px;
+  padding: 34px 34px 32px;
+  background: rgba(255, 255, 255, 0.94);
+  border: 1px solid rgba(18, 59, 53, 0.11);
+  border-radius: 30px;
+  box-shadow: 0 24px 58px rgba(21, 56, 46, 0.1);
+}
+
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 8px 13px;
+  border-radius: 999px;
+  background: rgba(230, 242, 238, 0.9);
+  color: var(--primary);
+  border: 1px solid rgba(82, 183, 136, 0.16);
+  margin-bottom: 18px;
+}
+
+.copyCard h3 {
+  font-family: var(--font-head);
+  font-size: clamp(1.78rem, 2.55vw, 2.28rem);
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+
+.copyCard p {
+  font-size: 0.95rem;
+  line-height: 1.68;
+  color: #52615d;
+  margin-bottom: 20px;
+}
+
+.points {
+  display: grid;
+  gap: 12px;
+}
+
+.point {
+  display: grid;
+  grid-template-columns: 34px 1fr;
+  gap: 12px;
+  align-items: start;
+}
+
+.pointMark {
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #f2f8f5 0%, #e6f2ec 100%);
+  border: 1px solid #dcebe3;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.92rem;
+  font-weight: 800;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.9);
+}
+
+.point strong {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--text);
+  margin-bottom: 2px;
+}
+
+.point span {
+  display: block;
+  font-size: 0.8rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.heroCta {
+  min-width: 0;
+  justify-content: center;
+}
+
+.stage {
+  position: relative;
+  min-height: 560px;
+  overflow: visible;
+  background: transparent;
+  border-radius: 0;
+}
+
+.petCard {
+  position: absolute;
+  width: 280px;
+  min-height: 318px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.98);
+  border: 1px solid rgba(18, 59, 53, 0.15);
+  box-shadow:
+    0 26px 62px rgba(21, 56, 46, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.88);
+  overflow: hidden;
+  z-index: 2;
+}
+
+.petOne {
+  top: 62px;
+  left: 62px;
+  transform: rotate(-2.2deg);
+}
+
+.petTwo {
+  top: 142px;
+  left: 342px;
+  transform: rotate(1.4deg);
+}
+
+.petThree {
+  top: 300px;
+  left: 152px;
+  transform: rotate(-1.1deg);
+}
+
+.cover {
+  height: 138px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.35rem;
+}
+
+.warm {
+  background: linear-gradient(135deg, #ffe9cf, #f8d5a4);
+}
+
+.blue {
+  background: linear-gradient(135deg, #ddf3ff, #bde4f7);
+}
+
+.green {
+  background: linear-gradient(135deg, #ddf3e7, #c7ebd4);
+}
+
+.status {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  padding: 7px 11px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.88);
+  color: var(--primary);
+  font-size: 0.74rem;
+  line-height: 1;
+  font-weight: 850;
+  box-shadow: 0 8px 18px rgba(21, 56, 46, 0.08);
+}
+
+.body {
+  padding: 16px 18px 18px;
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.06rem;
+  font-weight: 850;
+  color: var(--text);
+  margin-bottom: 5px;
+  letter-spacing: -0.02em;
+}
+
+.breed {
+  color: var(--text-muted);
+  font-size: 0.84rem;
+  margin-bottom: 12px;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: #6b7974;
+  font-size: 0.78rem;
+  margin-bottom: 15px;
+}
+
+.meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.petActions {
+  display: flex;
+  gap: 8px;
+}
+
+.petActions span {
+  padding: 7px 11px;
+  border-radius: 999px;
+  border: 1px solid rgba(18, 59, 53, 0.12);
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--text);
+  font-size: 0.76rem;
+  font-weight: 800;
+}
+
+.primaryBtn {
+  background: var(--primary) !important;
+  color: #fff !important;
+  border-color: var(--primary) !important;
+}
+
+@media (max-width: 980px) {
+  .inner {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .stage {
+    min-height: 500px;
+    border-radius: 0;
+    overflow: visible;
+  }
+
+  .copyCard {
+    justify-self: center;
+    margin: 0 22px 28px;
+    max-width: none;
+  }
+
+  .petOne {
+    left: 24px;
+    top: 32px;
+  }
+
+  .petTwo {
+    left: calc(100% - 304px);
+    top: 128px;
+  }
+
+  .petThree {
+    left: 96px;
+    top: 292px;
+  }
+}
+
+@media (max-width: 620px) {
+  .copyCard {
+    padding: 30px 24px;
+  }
+
+  .stage {
+    min-height: 820px;
+  }
+
+  .petCard {
+    width: calc(100% - 40px);
+    left: 20px !important;
+    transform: none !important;
+  }
+
+  .petOne {
+    top: 20px;
+  }
+
+  .petTwo {
+    top: 370px;
+  }
+
+  .petThree {
+    display: none;
+  }
+}
